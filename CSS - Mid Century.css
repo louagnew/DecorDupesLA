@@ -1,0 +1,251 @@
+.body{
+    background-color:#C8bdab;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 0px;
+}
+
+/*Nav Bar*/
+
+header {
+    background-color: #C8bdab; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    flex: 0; 
+    margin-right: 20px; 
+}
+
+.logo img {
+    height: 200px;
+    weight: 200px;
+}
+
+nav {
+    display: flex; 
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 30px; 
+    position: relative;
+}
+
+nav a {
+    color: #37391E; 
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Overpass Mono', monospace;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A7A88A; 
+    min-width: 250px; 
+    z-index: 2; 
+}
+
+nav .dropdown-content li {
+    padding: 20px;
+}
+
+nav .dropdown-content li:hover {
+    background-color: white;
+    width: 100%;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-btn {
+    cursor: pointer;
+}
+
+nav .dropdown-content {
+    transition: display 0.3s ease;
+}
+
+/*Header Image*/
+
+.AD-header {
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+#h1 {
+  font-family: 'Libre Baskerville', serif;
+  color: #3c5453;
+  font-size: 40px;
+  max-width: 1000px;
+  margin-top: -30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  position: absolute;
+  right: 0; 
+  text-align: right;
+  z-index: 1;
+}
+
+/*Carousel*/
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-start,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+    // transition-duration: 10s;
+  }
+  
+  /* display 4 */
+  @media (min-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+      transform: translateX(25%) !important;
+    }
+  
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+    }
+  
+    .carousel-item-next.carousel-item-start, .active.carousel-item-end {
+      transform: translateX(0) !important;
+    }
+  
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+    }
+  }
+
+  .carousel.slide.container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+/*Cards*/
+
+  .alt-cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .col-md-3 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-text-box {
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+  }
+
+  .custom-link {
+    color: black;
+    text-decoration-color: #113132;
+  }
+
+  .card-text {
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+  }
+
+/*Footer*/
+
+  .footer #p-footer {
+    font-family: 'Overpass Mono', monospace;
+    color: #A7A88A;
+    text-align: center;
+    margin: 50px;
+}
+
+/*Divider Lines*/
+
+.hr-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hr {
+    width: 75%;
+    border: none;
+    height: 2px;
+    background-color: #A7A88A;
+}
+
+/*General Product Styling */
+
+.products {
+    display: flex;
+    justify-content: center;
+}
+
+.h2-2 {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 20px;
+    margin-bottom: 0 auto;
+    color: #c59120;
+}
+
+.p-products {
+    text-align: center;
+    font-family: 'Taviraj', serif;
+    word-wrap: break-word;
+    margin: 30px;
+    margin-top: 0px;
+    color: #764c4d;
+    max-width: 400px;
+}
